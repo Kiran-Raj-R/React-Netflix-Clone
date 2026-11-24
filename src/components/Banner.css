@@ -1,0 +1,137 @@
+.banner {
+    width: 100%;
+    min-height: 550px;
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-overlay {
+    min-height: 550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 45%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+.banner-content {
+    max-width: 600px;
+    padding: 40px 5%;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e5e5e5;
+    margin-bottom: 25px;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.banner-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.play-btn {
+    background: white;
+    color: black;
+}
+
+.play-btn:hover {
+    background: #dcdcdc;
+}
+
+.info-btn {
+    background: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+.info-btn:hover {
+    background: rgba(109, 109, 110, 0.4);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .banner,
+    .banner-overlay {
+        min-height: 450px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .banner,
+    .banner-overlay {
+        min-height: 400px;
+    }
+
+    .banner-content {
+        padding: 25px 5%;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .banner-buttons button {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+}
+
+.banner-rating {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+.banner-content h1 {
+    max-width: 600px;
+}
+
+.banner-content p {
+    max-width: 500px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

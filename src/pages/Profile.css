@@ -1,0 +1,156 @@
+
+.profile-page {
+    min-height: 100vh;
+    background: #141414;
+    color: white;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px 20px;
+}
+
+.profile-container > h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    background: #222;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #444;
+}
+
+.profile-avatar {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e50914;
+    border-radius: 8px;
+}
+
+.profile-header h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.profile-header p {
+    color: #aaa;
+    overflow-wrap: anywhere;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 25px;
+}
+
+.profile-form label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.profile-form input,
+.profile-email {
+    padding: 13px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.profile-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaa;
+    overflow-wrap: anywhere;
+}
+
+.profile-save-btn,
+.profile-secondary-btn,
+.profile-logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile-save-btn {
+    background: #e50914;
+    margin-top: 10px;
+}
+
+.profile-save-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.profile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-list-summary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-list-summary p {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.profile-secondary-btn {
+    background: #444;
+}
+
+.profile-logout-btn {
+    background: #b20710;
+}
+
+.profile-success {
+    color: #4ade80;
+}
+
+.profile-error {
+    color: #ff6b6b;
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 20px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .profile-header h2 {
+        font-size: 18px;
+    }
+}

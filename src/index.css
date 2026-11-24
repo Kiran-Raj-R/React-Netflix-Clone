@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.loading,
+.error {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.error {
+    color: #ff5555;
+}
